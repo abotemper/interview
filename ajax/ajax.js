@@ -33,8 +33,7 @@ function ajax(url) {
     })
     return p
 }
-
-const url = '/data/test.json'
+const url = './data/test.json'
 ajax(url)
 .then(res => console.log(res))
 .catch(err => console.error(err))
