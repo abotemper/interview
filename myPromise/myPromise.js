@@ -20,7 +20,7 @@ class MyPromise {
             }
         }
 
-        const rejectHandler = reson => {
+        const rejectHandler = reason => {
             if(this.state === 'pending'){
                 this.state = 'rejected';
                 this.reason = reason;
