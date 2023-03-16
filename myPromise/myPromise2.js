@@ -7,6 +7,10 @@ class MyPromise2{
         //状态默认pending
         this.status = MyPromise2.PENDING;
         this.result = null;
+        this.resolveCallbacks = [];
+        this.rejectCallbacks = [];
+
+
         try{
             func(this.resolve.bind(this), this.reject.bind(this));
 
@@ -19,21 +23,34 @@ class MyPromise2{
 
     }
     resolve(result){
-        if(this.status === MyPromise2.PENDING){
-            this.status = MyPromise2.FULFILLED;
-            this.result = result;
-        }
+        setTimeout(() => {
+            if(this.status === MyPromise2.PENDING){
+                this.status = MyPromise2.FULFILLED;
+                this.result = result;
+                this.resolveCallbacks.forEach(callback => {
+                    callback(result);
+                });
+            }
+        });
     }
     reject(result){
         if(this.status === MyPromise2.PENDING){
             this.status = MyPromise2.REJECT;
             this.result = result;
+            this.rejectCallbacks.forEach(callback => {
+                callback(result)
+            });
         }
     }
 
     then(onFulfilled, onReject) {
         onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : () => {};
         onReject = typeof onReject === 'function' ? onReject : () => {};
+        if(this.status === MyPromise2.PENDING){
+            this.resolveCallbacks.push(onFulfilled);
+            this.rejectCallbacks.push(onReject);
+        }
+
         if(this.status === MyPromise2.FULFILLED){
             setTimeout(() => {
                 onFulfilled(this.result);
