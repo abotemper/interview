@@ -1,9 +1,9 @@
-const express = reuqire("express");
-const bodyParser = require("body-parser");
+const express = require("express");
 const axios = require("axios");
 
-const qpp = express();
-app.use(bodyParser.json());
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 const events = [];
 
