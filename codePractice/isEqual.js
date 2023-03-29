@@ -42,11 +42,19 @@ const obj1 = {
     }
 }
 const obj2 = {
-    a: 200,
+    a: 100,
     b: {
         x: 100,
         y: 200
     }
 }
-// console.log( obj1 === obj2 )
-console.log( isEqual(obj1, obj2) )
+
+obj3 = 20;
+obj4 = 20;
+
+obj5 = [1, 2, 3];
+obj6 = [1, 2, 3];
+console.log( obj1 === obj2 )
+console.log( isEqual(obj1, obj2) );
+console.log( isEqual(obj3, obj4) );
+console.log( isEqual(obj5, obj6) );
