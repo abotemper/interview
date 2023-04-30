@@ -3,6 +3,7 @@ class MyPromise2{
     static PENDING = 'pending';
     static FULFILLED = 'fulfilled';
     static REJECT = 'reject';
+    
     constructor(func) {
         //状态默认pending
         this.status = MyPromise2.PENDING;

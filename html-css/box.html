@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒模型</title>
+    <style type="text/css">
+        #div1 {
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            /* 下面这个加了会使得width成为整体盒子宽度 */
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        this is div1
+    </div>
+    <h1>offset-width-怎么算</h1>
+    <h1>offsetwIDTH = (内容宽度width + 内边距 + 边框) 也就是内容宽度加两侧padding和border， 但不包括margin</h1>
+
+    <script>
+        // document.getElementById('div1').offsetWidth
+    </script>
+</body>
+</html>
