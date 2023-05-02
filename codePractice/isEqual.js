@@ -26,7 +26,7 @@ function isEqual(obj1, obj2) {
   //2.以obj1 为基准 和 obj2 依次递归比较
   for(let key in obj1) {
     //比较当前key的val-递归
-    const res = isEqual(obj1[key], obj2[key]);
+    const res = isEqual(obj1[key], obj2[key]);//返回true or false
     if(!res) {
       return  false;
     }
@@ -34,6 +34,7 @@ function isEqual(obj1, obj2) {
   //全相等
   return  true;
 }
+
 const obj1 = {
     a: 100,
     b: {
