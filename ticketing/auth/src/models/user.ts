@@ -29,6 +29,20 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true
+  },
+}
+,{
+  //这一步是因为MongoDB中的一些键带有下划线_，导致我们开发与数据库的键不一致
+  //所以用这个方法可以返回一个新的对象，这样我们可以修改键的名称，删除不想要的键或数据
+  toJSON: {
+    transform(doc, ret){
+      //去掉_id的下划线
+      ret.id = ret._id;
+      delete ret._id;
+      
+      delete ret.password;//删除对象中指定的property
+      delete ret.__v;
+    }
   }
 });
 
