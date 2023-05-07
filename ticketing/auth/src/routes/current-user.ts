@@ -1,25 +1,27 @@
 import express from 'express';
-import jwt from 'jsonwebtoken';
 
+import { currentUser } from '../middlewares/current-user';
 
 const router = express.Router();
 
-router.get('/api/users/currentuser', (req, res) => {
+router.get('/api/users/currentuser', currentUser, (req, res) => {
   //!req.session?.jwt = !req.session || !req.session.jwt
-  if(!req.session?.jwt) {
-    return res.send({ currentUser: null});
-  }
+  // if(!req.session?.jwt) {
+  //   return res.send({ currentUser: null});
+  // }
 
-  try{
-    const payload = jwt.verify(
-      req.session.jwt, 
-      process.env.JWT_KEY!
-      );
-      res.send({ currentUser: payload });
-  }catch(err) {
-    res.send({ currentUser: null });
+  // try{
+  //   const payload = jwt.verify(
+  //     req.session.jwt, 
+  //     process.env.JWT_KEY!
+  //     );
+  //     res.send({ currentUser: payload });
+  // }catch(err) {
+  //   res.send({ currentUser: null });
+  // }
 
-  }
+  // 这是使用了中间件后的逻辑
+  res.send({ currentUser: req.currentUser || null });
 
 });
 //13245193419: 潘

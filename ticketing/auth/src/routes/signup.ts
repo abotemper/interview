@@ -4,8 +4,6 @@ import jwt from 'jsonwebtoken';
 
 import { validateRequest } from '../middlewares/validate-request';
 import { User } from '../models/user';
-import { RequestValidationError } from '../errors/request-validation-error';
-import { DatabaseConnectionError } from '../errors/database-connection-error';
 import { BadRequestError } from '../errors/bad-request-error';
 
 const router = express.Router();
@@ -42,7 +40,7 @@ const userJwt = jwt.sign(
   process.env.JWT_KEY!
   );//!用来取消type的考察
 
- //store it on session object
+ //store jwt on session object
 req.session = {
   jwt: userJwt
 };

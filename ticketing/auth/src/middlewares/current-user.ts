@@ -6,7 +6,7 @@ interface UserPayload {
   email: string;
 }
 
-//对已经存在的type 进行修改（增加property），
+//对已经存在的type 进行修改（增加property），因为这个interface本来没这个键
 //告诉interface Request，可有可没有currentUser这个键
 //如果有那么它是UserPayload 类型
 declare global {
