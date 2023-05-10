@@ -22,8 +22,10 @@ app.use(
   cookieSession({
     //cookie不需要加密，因为jwt加密性已经很好了
     signed: false,
-    //只允许https访问，更加安全
-    secure: true
+
+    //这里如果设置成true的意思是只允许https访问，更加安全
+    //但最好用环境变量，这样不会影响测试
+    secure: process.env.NODE_ENV !== 'test'
   })
 );
 
