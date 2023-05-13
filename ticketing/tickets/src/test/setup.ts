@@ -3,16 +3,17 @@ import mongoose from 'mongoose';
 import request from 'supertest';
 
 import { app } from '../app'
+import jwt from 'jsonwebtoken';
 
 //定义一个全局变量，signin，方便在其他地方使用
 //不然要单写一个，所有需要它的地方还要再引入
 declare global {
-  var signin: () => Promise<string[]>;
+  var signin: () => string[];
 }
 
 let mongo: any;
 //测试所有开始之前
-beforeAll(async() => {
+beforeAll(async () => {
   process.env.JWT_KEY = 'asdfasdf';
 
 // mongo = new MongoMemoryServer();
@@ -47,22 +48,30 @@ afterAll(async () => {
    
 });
 
-global.signin = async () => {
-  const email = 'test@test.com';
-  const password = 'password';
+global.signin = () => {
 
-  //写测试时总是写一样的请求，邮件和密码，还不如统一写在一块减少重复代码
-  const response = await request(app)
-    .post('/api/users/signup')
-    .send({
-      email, password
-    })
-    .expect(201);
+  // build a JWT payload . {id ,email}
+  const payload = {
+    id: '1sdfsdfasd',
+    email: 'tttt@tttt.com'
+  };
+  //create the JWT
+  const token = jwt.sign(payload, process.env.JWT_KEY!);
 
-  const cookie = response.get('Set-Cookie');
+  //build session object {JWT: MY_JWT}
+  const session = { jwt: token };
 
-  return cookie;
+  //turn that session into json
+  const sessionJSON = JSON.stringify(session);
+
+  //take json and encode it as base64
+  const base64 = Buffer.from(sessionJSON).toString('base64');
+
+  //return a string thats the cookie with the encoded data
+  return [`session=${base64}`];
 }
+
+
 
 // declare global {
 //   namespace NodeJS {
