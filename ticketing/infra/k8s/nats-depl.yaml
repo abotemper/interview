@@ -15,6 +15,10 @@ spec:
       containers:
         - name: nats
           image: nats-streaming:0.17.0
+          #hbt 是心跳heart beat
+          #hbi 是心跳频率
+          #hbt 是 每个客户端必须相应的时间
+          #hbf 是每个客户端在流媒体服务器认为链接失效之前可以失败的次数
           args:
             [
               '-p',
