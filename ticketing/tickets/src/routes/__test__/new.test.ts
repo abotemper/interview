@@ -1,6 +1,10 @@
 import request from 'supertest'; 
 import { app } from '../../app';
 import { Ticket } from '../../models/tickets';
+import { natsWrapper } from '../../nats-wrapper';
+
+//模拟初始化的natswrapper 用于jest测试
+// jest.mock('../../nats-wrapper.ts');
 
 it('has a route handler listening to /api/tickets for post requests', async () => {
    const response = await request(app)
@@ -87,3 +91,16 @@ it('creates a ticket with valid inputs', async () => {
   expect(tickets[0].price).toEqual(20);
   expect(tickets[0].title).toEqual(title);
 });
+
+it('publishes an event', async () => {
+  const title = 'asdasdasd';
+  await request(app)
+    .post('/api/tickets')
+    .set('Cookie', global.signin())
+    .send({
+      title,
+      price: 20,
+    })
+    .expect(201);
+  expect(natsWrapper.client.publish).toHaveBeenCalled();
+})

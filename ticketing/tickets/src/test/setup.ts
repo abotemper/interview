@@ -11,6 +11,8 @@ declare global {
   var signin: () => string[];
 }
 
+jest.mock('../nats-wrapper.ts');
+
 let mongo: any;
 //测试所有开始之前
 beforeAll(async () => {
@@ -31,6 +33,7 @@ beforeAll(async () => {
 
 //在每个测试之前
 beforeEach(async () => {
+  jest.clearAllMocks();
   //得到所有的collections
   const collections = await mongoose.connection.db.collections();
 
