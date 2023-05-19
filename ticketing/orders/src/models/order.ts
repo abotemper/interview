@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
-
+import { OrderStatus } from '@tiantianwuqing/common';
+import { TicketDoc } from "./ticket";
 interface OrderAttrs {
   userId: string;
-  status: string;
+  status: OrderStatus;
   expiresAt: Date;
   ticket: TicketDoc;
 }
@@ -11,7 +12,7 @@ interface OrderAttrs {
 //这个服务最终将它们第一次以一组不同的属性结束，他们暂时是相同的
 interface OrderDoc extends mongoose.Document {
   userId: string;
-  status: string;
+  status: OrderStatus;
   expiresAt: Date;
   ticket: TicketDoc;
 }
@@ -27,7 +28,9 @@ const orderSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    required: true
+    required: true,
+    enum: Object.values(OrderStatus),
+    default: OrderStatus.Created
   },
   expiresAt: {
     type: mongoose.Schema.Types.Date
