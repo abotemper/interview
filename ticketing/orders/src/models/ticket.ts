@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import { Order, OrderStatus } from "./order";
+
 
 interface TicketAttrs {
   title: string;
@@ -8,6 +10,7 @@ interface TicketAttrs {
 export interface TicketDoc extends mongoose.Document{
   title: string;
   price: number;
+  isReserved(): Promise<boolean>;
 }
 
 interface TicketModel extends mongoose.Model<TicketDoc>{
@@ -35,6 +38,24 @@ const ticketSchema = new mongoose.Schema({
 
 ticketSchema.statics.build = (attrs: TicketAttrs) => {
   return new Ticket(attrs);
+};
+
+//function关键字是为了兼容旧版js, 有this
+ticketSchema.methods.isReserved = async function() {
+  // this === the ticket document that we just called 'isReserved' on
+  const existingOrder = await Order.findOne({
+    ticket: this,
+    status: {
+      //"$" 是 MongoDB 的语法,表示这几个都符合
+      $in: [
+        OrderStatus.Created,
+        OrderStatus.AwaitingPayment,
+        OrderStatus.Complete
+      ],
+    },
+  });
+  //为了返回一个布尔值， null 就返回false， 有值就翻转成false再反转成true
+  return !!existingOrder;
 }
 
 const Ticket = mongoose.model<TicketDoc, TicketModel>('Ticket', ticketSchema);
