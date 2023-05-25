@@ -1,0 +1,1 @@
+us.gcr.io/ticketing-dev-385109/auth
