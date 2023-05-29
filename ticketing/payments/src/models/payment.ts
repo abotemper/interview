@@ -28,8 +28,8 @@ const paymentSchema = new mongoose.Schema({
     transform(doc, ret) {
       ret.id = ret._id;
       delete ret._id
-    }
-  }
+    },
+  },
 });
 
 paymentSchema.statics.build = (attrs: PaymentAttrs) => {

@@ -1,7 +1,7 @@
 import { Message } from 'node-nats-streaming';
 import { Listener, OrderCreatedEvent, Subjects } from '@tiantianwuqing/common';
 import { queueGroupName } from './queue-group-name';
-import { Ticket } from '../../models/tickets';
+import { Ticket } from '../../models/ticket';
 import { TicketUpdatedPublisher } from '../publishers/ticket-updated-publisher';
 
 export class OrderCreatedListener extends Listener<OrderCreatedEvent> {
@@ -19,6 +19,7 @@ export class OrderCreatedListener extends Listener<OrderCreatedEvent> {
 
     // Mark the ticket as being reserved by setting its orderId property
     ticket.set({ orderId: data.id });
+    console.log('orderId set in ticket');
 
     // Save the ticket
     await ticket.save();

@@ -2,7 +2,7 @@ import { Message } from 'node-nats-streaming';
 import mongoose from 'mongoose';
 import { OrderCreatedEvent, OrderStatus } from '@tiantianwuqing/common';
 import { OrderCreatedListener } from '../order-created-listener';
-import { Ticket } from '../../../models/tickets';
+import { Ticket } from '../../../models/ticket';
 import { natsWrapper } from '../../../nats-wrapper'
 
 const setup = async () => {

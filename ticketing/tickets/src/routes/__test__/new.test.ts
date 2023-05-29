@@ -1,6 +1,6 @@
 import request from 'supertest'; 
 import { app } from '../../app';
-import { Ticket } from '../../models/tickets';
+import { Ticket } from '../../models/ticket';
 import { natsWrapper } from '../../nats-wrapper';
 
 //模拟初始化的natswrapper 用于jest测试
