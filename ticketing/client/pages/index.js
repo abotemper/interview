@@ -3,6 +3,7 @@ import Link from 'next/link';
 const LandingPage = ({ currentUser, tickets }) => {
   const ticketList = tickets.map(ticket => {
     return (
+      //罗列在售票据，点击view 会路由到相关tickets界面
       <tr key={ticket.id}>
         <td>{ticket.title}</td>
         <td>{ticket.price}</td>
@@ -16,7 +17,7 @@ const LandingPage = ({ currentUser, tickets }) => {
   });
   return (
     <div>
-      <h1>Tickets</h1>
+      <h2>Tickets</h2>
       <table className="table">
         <thead>
           <tr>

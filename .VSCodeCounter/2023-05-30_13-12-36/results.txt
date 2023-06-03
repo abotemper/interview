@@ -1,0 +1,354 @@
+Date : 2023-05-30 13:12:36
+Directory : /Users/tianbo/Desktop/newInterview/interview/ticketing
+Total : 216 files,  59158 codes, 1857 comments, 1720 blanks, all 62735 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |         24 |     52,408 |         22 |         15 |     52,445 |
+| TypeScript         |        112 |      2,967 |        304 |        837 |      4,108 |
+| JavaScript         |         35 |      2,845 |        980 |        734 |      4,559 |
+| YAML               |         26 |        823 |         42 |         52 |        917 |
+| JSON with Comments |          7 |         72 |        509 |         60 |        641 |
+| Docker             |          6 |         36 |          0 |         17 |         53 |
+| Ignore             |          6 |          7 |          0 |          5 |         12 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                            | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                               |        216 |     59,158 |      1,857 |      1,720 |     62,735 |
+| . (Files)                                                                                                                       |          1 |         59 |         21 |          2 |         82 |
+| .github                                                                                                                         |         11 |        199 |          7 |         22 |        228 |
+| .github/workflows                                                                                                               |         11 |        199 |          7 |         22 |        228 |
+| auth                                                                                                                            |         18 |     12,534 |        157 |        136 |     12,827 |
+| auth (Files)                                                                                                                    |          5 |     12,139 |         85 |         15 |     12,239 |
+| auth/src                                                                                                                        |         13 |        395 |         72 |        121 |        588 |
+| auth/src (Files)                                                                                                                |          2 |         48 |          7 |         19 |         74 |
+| auth/src/models                                                                                                                 |          1 |         45 |         12 |         15 |         72 |
+| auth/src/routes                                                                                                                 |          8 |        251 |         31 |         57 |        339 |
+| auth/src/routes (Files)                                                                                                         |          4 |         96 |         25 |         30 |        151 |
+| auth/src/routes/__test__                                                                                                        |          4 |        155 |          6 |         27 |        188 |
+| auth/src/services                                                                                                               |          1 |         15 |          1 |          6 |         22 |
+| auth/src/test                                                                                                                   |          1 |         36 |         21 |         24 |         81 |
+| client                                                                                                                          |         47 |      3,484 |        980 |        738 |      5,202 |
+| client (Files)                                                                                                                  |          5 |        582 |          9 |          5 |        596 |
+| client/.next                                                                                                                    |         30 |      2,505 |        905 |        656 |      4,066 |
+| client/.next (Files)                                                                                                            |          3 |         42 |          0 |          0 |         42 |
+| client/.next/server                                                                                                             |         12 |        359 |        175 |        111 |        645 |
+| client/.next/server (Files)                                                                                                     |          7 |        161 |         34 |          0 |        195 |
+| client/.next/server/pages                                                                                                       |          5 |        198 |        141 |        111 |        450 |
+| client/.next/static                                                                                                             |         15 |      2,104 |        730 |        545 |      3,379 |
+| client/.next/static/chunks                                                                                                      |          9 |      2,061 |        708 |        545 |      3,314 |
+| client/.next/static/chunks (Files)                                                                                              |          5 |      1,979 |        646 |        511 |      3,136 |
+| client/.next/static/chunks/pages                                                                                                |          4 |         82 |         62 |         34 |        178 |
+| client/.next/static/development                                                                                                 |          2 |          2 |          0 |          0 |          2 |
+| client/.next/static/webpack                                                                                                     |          4 |         41 |         22 |          0 |         63 |
+| client/api                                                                                                                      |          1 |         13 |          2 |          2 |         17 |
+| client/component                                                                                                                |          1 |         31 |          0 |          4 |         35 |
+| client/hooks                                                                                                                    |          1 |         27 |          1 |          4 |         32 |
+| client/pages                                                                                                                    |          9 |        326 |         63 |         67 |        456 |
+| client/pages (Files)                                                                                                            |          2 |         68 |         55 |         25 |        148 |
+| client/pages/auth                                                                                                               |          3 |        105 |          8 |         16 |        129 |
+| client/pages/orders                                                                                                             |          2 |         68 |          0 |         12 |         80 |
+| client/pages/tickets                                                                                                            |          2 |         85 |          0 |         14 |         99 |
+| common                                                                                                                          |         24 |      2,454 |        125 |         82 |      2,661 |
+| common (Files)                                                                                                                  |          3 |      2,154 |        111 |         10 |      2,275 |
+| common/src                                                                                                                      |         21 |        300 |         14 |         72 |        386 |
+| common/src (Files)                                                                                                              |          1 |         20 |          0 |          6 |         26 |
+| common/src/errors                                                                                                               |          6 |         67 |          1 |         28 |         96 |
+| common/src/events                                                                                                               |         10 |        148 |         10 |         26 |        184 |
+| common/src/events (Files)                                                                                                       |          9 |        142 |          2 |         23 |        167 |
+| common/src/events/types                                                                                                         |          1 |          6 |          8 |          3 |         17 |
+| common/src/middlewares                                                                                                          |          4 |         65 |          3 |         12 |         80 |
+| expiration                                                                                                                      |         12 |      5,280 |         53 |         44 |      5,377 |
+| expiration (Files)                                                                                                              |          5 |      5,173 |         53 |         14 |      5,240 |
+| expiration/src                                                                                                                  |          7 |        107 |          0 |         30 |        137 |
+| expiration/src (Files)                                                                                                          |          2 |         54 |          0 |         19 |         73 |
+| expiration/src/__mocks__                                                                                                        |          1 |         11 |          0 |          0 |         11 |
+| expiration/src/events                                                                                                           |          3 |         25 |          0 |          6 |         31 |
+| expiration/src/events/listeners                                                                                                 |          2 |         21 |          0 |          5 |         26 |
+| expiration/src/events/publishers                                                                                                |          1 |          4 |          0 |          1 |          5 |
+| expiration/src/queues                                                                                                           |          1 |         17 |          0 |          5 |         22 |
+| infra                                                                                                                           |         14 |        565 |         14 |         28 |        607 |
+| infra/k8s                                                                                                                       |         12 |        439 |          9 |         19 |        467 |
+| infra/k8s-dev                                                                                                                   |          1 |         47 |          2 |          4 |         53 |
+| infra/k8s-prod                                                                                                                  |          1 |         79 |          3 |          5 |         87 |
+| nats-test                                                                                                                       |         11 |        876 |        134 |         58 |      1,068 |
+| nats-test (Files)                                                                                                               |          3 |        741 |         91 |         11 |        843 |
+| nats-test/src                                                                                                                   |          8 |        135 |         43 |         47 |        225 |
+| nats-test/src (Files)                                                                                                           |          2 |         36 |         40 |         28 |        104 |
+| nats-test/src/events                                                                                                            |          6 |         99 |          3 |         19 |        121 |
+| orders                                                                                                                          |         30 |     13,098 |        172 |        234 |     13,504 |
+| orders (Files)                                                                                                                  |          5 |     12,299 |         85 |         15 |     12,399 |
+| orders/src                                                                                                                      |         25 |        799 |         87 |        219 |      1,105 |
+| orders/src (Files)                                                                                                              |          3 |        101 |          7 |         33 |        141 |
+| orders/src/__mocks__                                                                                                            |          1 |         11 |          0 |          0 |         11 |
+| orders/src/events                                                                                                               |         10 |        223 |         21 |         71 |        315 |
+| orders/src/events/listener                                                                                                      |          8 |        215 |         21 |         68 |        304 |
+| orders/src/events/listener (Files)                                                                                              |          5 |         86 |          4 |         24 |        114 |
+| orders/src/events/listener/__test__                                                                                             |          3 |        129 |         17 |         44 |        190 |
+| orders/src/events/publishers                                                                                                    |          2 |          8 |          0 |          3 |         11 |
+| orders/src/models                                                                                                               |          2 |        120 |          6 |         17 |        143 |
+| orders/src/routes                                                                                                               |          8 |        308 |         27 |         70 |        405 |
+| orders/src/routes (Files)                                                                                                       |          4 |        112 |         10 |         29 |        151 |
+| orders/src/routes/__test__                                                                                                      |          4 |        196 |         17 |         41 |        254 |
+| orders/src/test                                                                                                                 |          1 |         36 |         26 |         28 |         90 |
+| payments                                                                                                                        |         21 |      7,563 |         88 |        154 |      7,805 |
+| payments (Files)                                                                                                                |          5 |      7,079 |         53 |         14 |      7,146 |
+| payments/src                                                                                                                    |         16 |        484 |         35 |        140 |        659 |
+| payments/src (Files)                                                                                                            |          4 |         95 |          6 |         33 |        134 |
+| payments/src/__mocks__                                                                                                          |          1 |         11 |          0 |          0 |         11 |
+| payments/src/events                                                                                                             |          6 |        116 |          2 |         37 |        155 |
+| payments/src/events/listeners                                                                                                   |          5 |        112 |          2 |         34 |        148 |
+| payments/src/events/listeners (Files)                                                                                           |          3 |         40 |          0 |         11 |         51 |
+| payments/src/events/listeners/__test__                                                                                          |          2 |         72 |          2 |         23 |         97 |
+| payments/src/events/publishers                                                                                                  |          1 |          4 |          0 |          3 |          7 |
+| payments/src/models                                                                                                             |          2 |         87 |          1 |         16 |        104 |
+| payments/src/routes                                                                                                             |          2 |        136 |          0 |         24 |        160 |
+| payments/src/routes (Files)                                                                                                     |          1 |         51 |          0 |         10 |         61 |
+| payments/src/routes/__test__                                                                                                    |          1 |         85 |          0 |         14 |         99 |
+| payments/src/test                                                                                                               |          1 |         39 |         26 |         30 |         95 |
+| tickets                                                                                                                         |         27 |     13,046 |        106 |        222 |     13,374 |
+| tickets (Files)                                                                                                                 |          5 |     12,299 |         53 |         14 |     12,366 |
+| tickets/src                                                                                                                     |         22 |        747 |         53 |        208 |      1,008 |
+| tickets/src (Files)                                                                                                             |          3 |         97 |          7 |         34 |        138 |
+| tickets/src/__mocks__                                                                                                           |          1 |         11 |          0 |          0 |         11 |
+| tickets/src/events                                                                                                              |          7 |        148 |         10 |         45 |        203 |
+| tickets/src/events/listeners                                                                                                    |          5 |        140 |         10 |         41 |        191 |
+| tickets/src/events/listeners (Files)                                                                                            |          3 |         54 |          5 |         14 |         73 |
+| tickets/src/events/listeners/__test__                                                                                           |          2 |         86 |          5 |         27 |        118 |
+| tickets/src/events/publishers                                                                                                   |          2 |          8 |          0 |          4 |         12 |
+| tickets/src/models                                                                                                              |          2 |         81 |          6 |         21 |        108 |
+| tickets/src/models (Files)                                                                                                      |          1 |         48 |          0 |          7 |         55 |
+| tickets/src/models/__test__                                                                                                     |          1 |         33 |          6 |         14 |         53 |
+| tickets/src/routes                                                                                                              |          8 |        372 |          4 |         79 |        455 |
+| tickets/src/routes (Files)                                                                                                      |          4 |        105 |          1 |         25 |        131 |
+| tickets/src/routes/__test__                                                                                                     |          4 |        267 |          3 |         54 |        324 |
+| tickets/src/test                                                                                                                |          1 |         38 |         26 |         29 |         93 |
++---------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                                        | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/deploy-auth.yaml                                       | YAML               |         23 |          1 |          2 |         26 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/deploy-client.yaml                                     | YAML               |         23 |          1 |          2 |         26 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/deploy-expiration.yaml                                 | YAML               |         23 |          1 |          2 |         26 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/deploy-manifests.yaml                                  | YAML               |         17 |          1 |          2 |         20 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/deploy-orders.yaml                                     | YAML               |         23 |          1 |          2 |         26 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/deploy-payments.yaml                                   | YAML               |         23 |          1 |          2 |         26 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/deploy-tickets.yaml                                    | YAML               |         23 |          1 |          2 |         26 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/tests-auth.yml                                         | YAML               |         11 |          0 |          2 |         13 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/tests-orders.yaml                                      | YAML               |         11 |          0 |          2 |         13 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/tests-payments.yaml                                    | YAML               |         11 |          0 |          2 |         13 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/.github/workflows/tests-tickets.yaml                                     | YAML               |         11 |          0 |          2 |         13 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/.dockerignore                                                       | Ignore             |          1 |          0 |          1 |          2 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/Dockerfile                                                          | Docker             |          6 |          0 |          3 |          9 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/package-lock.json                                                   | JSON               |     12,077 |          0 |          1 |     12,078 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/package.json                                                        | JSON               |         45 |          0 |          1 |         46 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/app.ts                                                          | TypeScript         |         27 |          7 |          9 |         43 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/index.ts                                                        | TypeScript         |         21 |          0 |         10 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/models/user.ts                                                  | TypeScript         |         45 |         12 |         15 |         72 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/routes/__test__/current-user.test.ts                            | TypeScript         |         19 |          3 |          8 |         30 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/routes/__test__/signin.test.ts                                  | TypeScript         |         44 |          0 |          5 |         49 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/routes/__test__/signout.test.ts                                 | TypeScript         |         19 |          0 |          2 |         21 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/routes/__test__/signup.test.ts                                  | TypeScript         |         73 |          3 |         12 |         88 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/routes/current-user.ts                                          | TypeScript         |          7 |         18 |          7 |         32 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/routes/signin.ts                                                | TypeScript         |         46 |          2 |          9 |         57 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/routes/signout.ts                                               | TypeScript         |          7 |          0 |          3 |         10 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/routes/signup.ts                                                | TypeScript         |         36 |          5 |         11 |         52 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/services/password.ts                                            | TypeScript         |         15 |          1 |          6 |         22 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/src/test/setup.ts                                                   | TypeScript         |         36 |         21 |         24 |         81 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/auth/tsconfig.json                                                       | JSON with Comments |         10 |         85 |          9 |        104 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.dockerignore                                                     | Ignore             |          2 |          0 |          0 |          2 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/build-manifest.json                                         | JSON               |         40 |          0 |          0 |         40 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/package.json                                                | JSON               |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/react-loadable-manifest.json                                | JSON               |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/middleware-build-manifest.js                         | JavaScript         |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/middleware-manifest.json                             | JSON               |          6 |          0 |          0 |          6 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/middleware-react-loadable-manifest.js                | JavaScript         |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/next-font-manifest.js                                | JavaScript         |          6 |          0 |          0 |          6 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/next-font-manifest.json                              | JSON               |          6 |          0 |          0 |          6 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/pages-manifest.json                                  | JSON               |          7 |          0 |          0 |          7 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/pages/_app.js                                        | JavaScript         |         30 |         21 |         15 |         66 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/pages/_document.js                                   | JavaScript         |         54 |         39 |         33 |        126 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/pages/_error.js                                      | JavaScript         |         54 |         39 |         33 |        126 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/pages/banana.js                                      | JavaScript         |         30 |         21 |         15 |         66 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/pages/index.js                                       | JavaScript         |         30 |         21 |         15 |         66 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/server/webpack-runtime.js                                   | JavaScript         |        134 |         34 |          0 |        168 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/amp.js                                        | JavaScript         |        336 |        207 |        199 |        742 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/main.js                                       | JavaScript         |        494 |        306 |        298 |      1,098 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/pages/_app.js                                 | JavaScript         |         13 |         11 |          4 |         28 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/pages/_error.js                               | JavaScript         |         13 |         11 |          4 |         28 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/pages/banana.js                               | JavaScript         |         28 |         20 |         13 |         61 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/pages/index.js                                | JavaScript         |         28 |         20 |         13 |         61 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/polyfills.js                                  | JavaScript         |          1 |          0 |          1 |          2 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/react-refresh.js                              | JavaScript         |         28 |         21 |         13 |         62 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/chunks/webpack.js                                    | JavaScript         |      1,120 |        112 |          0 |      1,232 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/development/_buildManifest.js                        | JavaScript         |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/development/_ssgManifest.js                          | JavaScript         |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/webpack/9b07e6189d994328.webpack.hot-update.json     | JSON               |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/webpack/c5c07a46d1d0833c.webpack.hot-update.json     | JSON               |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/webpack/webpack.9b07e6189d994328.hot-update.js       | JavaScript         |          9 |          9 |          0 |         18 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/.next/static/webpack/webpack.c5c07a46d1d0833c.hot-update.js       | JavaScript         |         30 |         13 |          0 |         43 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/Dockerfile                                                        | Docker             |          6 |          0 |          2 |          8 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/api/build-client.js                                               | JavaScript         |         13 |          2 |          2 |         17 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/component/header.js                                               | JavaScript         |         31 |          0 |          4 |         35 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/hooks/use-request.js                                              | JavaScript         |         27 |          1 |          4 |         32 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/next.config.js                                                    | JavaScript         |          6 |          9 |          1 |         16 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/package-lock.json                                                 | JSON               |        547 |          0 |          1 |        548 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/package.json                                                      | JSON               |         21 |          0 |          1 |         22 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/_app.js                                                     | JavaScript         |         30 |          8 |          8 |         46 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/auth/signin.js                                              | JavaScript         |         45 |          4 |          6 |         55 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/auth/signout.js                                             | JavaScript         |         15 |          0 |          4 |         19 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/auth/signup.js                                              | JavaScript         |         45 |          4 |          6 |         55 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/index.js                                                    | JavaScript         |         38 |         47 |         17 |        102 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/orders/[orderId].js                                         | JavaScript         |         50 |          0 |         10 |         60 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/orders/index.js                                             | JavaScript         |         18 |          0 |          2 |         20 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/tickets/[ticketId].js                                       | JavaScript         |         31 |          0 |          6 |         37 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/client/pages/tickets/new.js                                              | JavaScript         |         54 |          0 |          8 |         62 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/package-lock.json                                                 | JSON               |      2,131 |          0 |          1 |      2,132 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/package.json                                                      | JSON               |         11 |         22 |          0 |         33 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/errors/bad-request-error.ts                                   | TypeScript         |         11 |          0 |          4 |         15 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/errors/custom-errors.ts                                       | TypeScript         |          8 |          0 |          5 |         13 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/errors/database-connection-error.ts                           | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/errors/not-authorized-error.ts                                | TypeScript         |         11 |          0 |          3 |         14 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/errors/not-found-error.ts                                     | TypeScript         |         11 |          0 |          6 |         17 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/errors/request-validation-error.ts                            | TypeScript         |         14 |          1 |          5 |         20 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/base-listener.ts                                       | TypeScript         |         44 |          1 |          8 |         53 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/base-publisher.ts                                      | TypeScript         |         24 |          1 |          4 |         29 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/expiration-complete-event.ts                           | TypeScript         |          7 |          0 |          1 |          8 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/order-cancelled-event.ts                               | TypeScript         |         11 |          0 |          1 |         12 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/order-created-event.ts                                 | TypeScript         |         16 |          0 |          1 |         17 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/payment-created-event.ts                               | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/subjects.ts                                            | TypeScript         |          8 |          0 |          5 |         13 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/ticket-created-event.ts                                | TypeScript         |         11 |          0 |          1 |         12 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/ticket-updated-event.ts                                | TypeScript         |         12 |          0 |          1 |         13 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/events/types/order-status.ts                                  | TypeScript         |          6 |          8 |          3 |         17 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/index.ts                                                      | TypeScript         |         20 |          0 |          6 |         26 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/middlewares/current-user.ts                                   | TypeScript         |         27 |          3 |          5 |         35 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/middlewares/error-handler.ts                                  | TypeScript         |         16 |          0 |          1 |         17 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/middlewares/require-auth.ts                                   | TypeScript         |          8 |          0 |          2 |         10 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/src/middlewares/validate-request.ts                               | TypeScript         |         14 |          0 |          4 |         18 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/common/tsconfig.json                                                     | JSON with Comments |         12 |         89 |          9 |        110 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/.dockerignore                                                 | Ignore             |          1 |          0 |          1 |          2 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/Dockerfile                                                    | Docker             |          6 |          0 |          3 |          9 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/package-lock.json                                             | JSON               |      5,123 |          0 |          1 |      5,124 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/package.json                                                  | JSON               |         33 |          0 |          1 |         34 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/src/__mocks__/nats-wrapper.ts                                 | TypeScript         |         11 |          0 |          0 |         11 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/src/events/listeners/order-created-listener.ts                | TypeScript         |         20 |          0 |          5 |         25 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/src/events/listeners/queue-group-name.ts                      | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/src/events/publishers/expiration-complete-publisher.ts        | TypeScript         |          4 |          0 |          1 |          5 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/src/index.ts                                                  | TypeScript         |         31 |          0 |         11 |         42 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/src/nats-wrapper.ts                                           | TypeScript         |         23 |          0 |          8 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/src/queues/expiration-queue.ts                                | TypeScript         |         17 |          0 |          5 |         22 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/expiration/tsconfig.json                                                 | JSON with Comments |         10 |         53 |          8 |         71 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s-dev/ingress-srv.yaml                                           | YAML               |         47 |          2 |          4 |         53 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s-prod/ingress-srv.yaml                                          | YAML               |         79 |          3 |          5 |         87 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/auth-depl.yaml                                                 | YAML               |         38 |          0 |          2 |         40 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/auth-mongo-depl.yaml                                           | YAML               |         30 |          0 |          1 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/client.depl.yaml                                               | YAML               |         30 |          4 |          2 |         36 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/expiration-depl.yaml                                           | YAML               |         28 |          0 |          1 |         29 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/expiration-redis-depl.yaml                                     | YAML               |         30 |          0 |          1 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/nats-depl.yaml                                                 | YAML               |         50 |          5 |          1 |         56 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/orders-depl.yaml                                               | YAML               |         46 |          0 |          4 |         50 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/orders-mongo-depl.yaml                                         | YAML               |         30 |          0 |          1 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/payments-depl.yaml                                             | YAML               |         51 |          0 |          2 |         53 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/payments-mongo-depl.yaml                                       | YAML               |         30 |          0 |          1 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/tickets-depl.yaml                                              | YAML               |         46 |          0 |          2 |         48 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/infra/k8s/tickets-mongo-depl.yaml                                        | YAML               |         30 |          0 |          1 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/package-lock.json                                              | JSON               |        712 |          0 |          1 |        713 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/package.json                                                   | JSON               |         19 |          0 |          1 |         20 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/src/events/base-listener.ts                                    | TypeScript         |         44 |          1 |          8 |         53 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/src/events/base-publisher.ts                                   | TypeScript         |         24 |          1 |          4 |         29 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/src/events/subjects.ts                                         | TypeScript         |          4 |          0 |          2 |          6 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/src/events/ticket-created-event.ts                             | TypeScript         |          9 |          0 |          1 |         10 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/src/events/ticket-created-listener.ts                          | TypeScript         |         12 |          1 |          3 |         16 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/src/events/ticket-created-publisher.ts                         | TypeScript         |          6 |          0 |          1 |          7 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/src/listener.ts                                                | TypeScript         |         17 |         31 |         20 |         68 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/src/publisher.ts                                               | TypeScript         |         19 |          9 |          8 |         36 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/nats-test/tsconfig.json                                                  | JSON with Comments |         10 |         91 |          9 |        110 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/.dockerignore                                                     | Ignore             |          1 |          0 |          1 |          2 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/Dockerfile                                                        | Docker             |          6 |          0 |          3 |          9 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/package-lock.json                                                 | JSON               |     12,235 |          0 |          1 |     12,236 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/package.json                                                      | JSON               |         47 |          0 |          1 |         48 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/__mocks__/nats-wrapper.ts                                     | TypeScript         |         11 |          0 |          0 |         11 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/app.ts                                                        | TypeScript         |         28 |          7 |         10 |         45 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/listener/__test__/expiration-complete-listener.test.ts | TypeScript         |         48 |          1 |         18 |         67 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/listener/__test__/ticket-created-listener.test.ts      | TypeScript         |         33 |         10 |         11 |         54 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/listener/__test__/ticket-updated-listener.test.ts      | TypeScript         |         48 |          6 |         15 |         69 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/listener/expiration-complete-listener.ts               | TypeScript         |         30 |          0 |          6 |         36 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/listener/payment-created-listener.ts                   | TypeScript         |         19 |          0 |          9 |         28 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/listener/queue-group-name.ts                           | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/listener/ticket-created-listener.ts                    | TypeScript         |         18 |          3 |          3 |         24 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/listener/ticket-updated-listener.ts                    | TypeScript         |         18 |          1 |          6 |         25 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/publishers/order-cancelled-publisher.ts                | TypeScript         |          4 |          0 |          2 |          6 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/events/publishers/order-created-pubilisher.ts                 | TypeScript         |          4 |          0 |          1 |          5 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/index.ts                                                      | TypeScript         |         50 |          0 |         15 |         65 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/models/order.ts                                               | TypeScript         |         54 |          2 |          9 |         65 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/models/ticket.ts                                              | TypeScript         |         66 |          4 |          8 |         78 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/nats-wrapper.ts                                               | TypeScript         |         23 |          0 |          8 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/routes/__test__/delete.test.ts                                | TypeScript         |         47 |          6 |         12 |         65 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/routes/__test__/index.test.ts                                 | TypeScript         |         45 |          5 |          8 |         58 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/routes/__test__/new.test.ts                                   | TypeScript         |         61 |          0 |         10 |         71 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/routes/__test__/show.test.ts                                  | TypeScript         |         43 |          6 |         11 |         60 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/routes/delete.ts                                              | TypeScript         |         29 |          1 |          8 |         38 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/routes/index.ts                                               | TypeScript         |         11 |          0 |          5 |         16 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/routes/new.ts                                                 | TypeScript         |         54 |          8 |         11 |         73 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/routes/show.ts                                                | TypeScript         |         18 |          1 |          5 |         24 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/src/test/setup.ts                                                 | TypeScript         |         36 |         26 |         28 |         90 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/orders/tsconfig.json                                                     | JSON with Comments |         10 |         85 |          9 |        104 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/.dockerignore                                                   | Ignore             |          1 |          0 |          1 |          2 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/Dockerfile                                                      | Docker             |          6 |          0 |          3 |          9 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/package-lock.json                                               | JSON               |      7,014 |          0 |          1 |      7,015 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/package.json                                                    | JSON               |         48 |          0 |          1 |         49 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/__mocks__/nats-wrapper.ts                                   | TypeScript         |         11 |          0 |          0 |         11 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/app.ts                                                      | TypeScript         |         22 |          6 |          8 |         36 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/events/listeners/__test__/order-cancelled-lisntener.test.ts | TypeScript         |         38 |          1 |         12 |         51 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/events/listeners/__test__/order-created-listener.test.ts    | TypeScript         |         34 |          1 |         11 |         46 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/events/listeners/order-cancelled-listener.ts                | TypeScript         |         20 |          0 |          6 |         26 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/events/listeners/order-created-listener.ts                  | TypeScript         |         19 |          0 |          5 |         24 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/events/listeners/queue-group-name.ts                        | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/events/publishers/payment-created-publisher.ts              | TypeScript         |          4 |          0 |          3 |          7 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/index.ts                                                    | TypeScript         |         46 |          0 |         16 |         62 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/models/order.ts                                             | TypeScript         |         53 |          1 |          8 |         62 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/models/payment.ts                                           | TypeScript         |         34 |          0 |          8 |         42 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/nats-wrapper.ts                                             | TypeScript         |         23 |          0 |          8 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/routes/__test__/new.test.ts                                 | TypeScript         |         85 |          0 |         14 |         99 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/routes/new.ts                                               | TypeScript         |         51 |          0 |         10 |         61 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/stripe.ts                                                   | TypeScript         |          4 |          0 |          1 |          5 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/src/test/setup.ts                                               | TypeScript         |         39 |         26 |         30 |         95 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/payments/tsconfig.json                                                   | JSON with Comments |         10 |         53 |          8 |         71 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/skaffold.yaml                                                            | YAML               |         59 |         21 |          2 |         82 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/.dockerignore                                                    | Ignore             |          1 |          0 |          1 |          2 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/Dockerfile                                                       | Docker             |          6 |          0 |          3 |          9 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/package-lock.json                                                | JSON               |     12,235 |          0 |          1 |     12,236 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/package.json                                                     | JSON               |         47 |          0 |          1 |         48 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/__mocks__/nats-wrapper.ts                                    | TypeScript         |         11 |          0 |          0 |         11 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/app.ts                                                       | TypeScript         |         28 |          7 |         10 |         45 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/events/listeners/__test__/order-cancelled-listener.test.ts   | TypeScript         |         36 |          1 |         10 |         47 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/events/listeners/__test__/order-created-listener.test.ts     | TypeScript         |         50 |          4 |         17 |         71 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/events/listeners/order-cancelled-listener.ts                 | TypeScript         |         26 |          0 |          6 |         32 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/events/listeners/order-created-listener.ts                   | TypeScript         |         27 |          5 |          7 |         39 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/events/listeners/queue-group-name.ts                         | TypeScript         |          1 |          0 |          1 |          2 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/events/publishers/ticket-created-publisher.ts                | TypeScript         |          4 |          0 |          2 |          6 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/events/publishers/ticket-updated-publisher.ts                | TypeScript         |          4 |          0 |          2 |          6 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/index.ts                                                     | TypeScript         |         46 |          0 |         16 |         62 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/models/__test__/ticket.test.ts                               | TypeScript         |         33 |          6 |         14 |         53 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/models/ticket.ts                                             | TypeScript         |         48 |          0 |          7 |         55 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/nats-wrapper.ts                                              | TypeScript         |         23 |          0 |          8 |         31 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/routes/__test__/index.test.ts                                | TypeScript         |         21 |          0 |          6 |         27 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/routes/__test__/new.test.ts                                  | TypeScript         |         86 |          3 |         17 |        106 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/routes/__test__/show.test.ts                                 | TypeScript         |         27 |          0 |          6 |         33 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/routes/__test__/update.test.ts                               | TypeScript         |        133 |          0 |         25 |        158 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/routes/index.ts                                              | TypeScript         |         10 |          0 |          4 |         14 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/routes/new.ts                                                | TypeScript         |         33 |          1 |          5 |         39 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/routes/show.ts                                               | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/routes/update.ts                                             | TypeScript         |         50 |          0 |         11 |         61 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/src/test/setup.ts                                                | TypeScript         |         38 |         26 |         29 |         93 |
+| /Users/tianbo/Desktop/newInterview/interview/ticketing/tickets/tsconfig.json                                                    | JSON with Comments |         10 |         53 |          8 |         71 |
+| Total                                                                                                                           |                    |     59,158 |      1,857 |      1,720 |     62,735 |
++---------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

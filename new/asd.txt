@@ -1,0 +1,31 @@
+tiantian-ticketing-app.com
+
+// we are on the server
+return axios.create({
+  baseURL: 'http://ingress-nginx-conroller.ingress-nginx.srv.cluster.local',
+  headers: req.headers,
+});
+
+// we are on the server
+return axios.create({
+  baseURL: 'Whatever_your_domain',
+  headers: req.headers, 
+});
+
+baseURL: 'http://www.tiantian-ticketing-app.com/'
+
+go to the app.ts file in the auth,orders,tickets,payments
+
+cookieSession({
+  signed: false,
+  secure: process.env.NODE_ENV !== 'test',
+});
+
+cookieSession({
+  signed: false,
+  secure: false,
+});
+
+add the following to the bottom of your ingress-srv.yaml minifest
+Also apdate the URL on this line in the annotations to the domain name youre using:
+service.beta.kubernetes.io/do-loadbalabcer-hostname:'www.tiantian-ticketing-app.com'
