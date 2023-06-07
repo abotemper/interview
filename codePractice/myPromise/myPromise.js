@@ -21,6 +21,7 @@ class MyPromise {
     reason = undefined;
 
     //这里装的是函数
+    //防止传入的函数有异步，来不及then，所以如果是异步，用‘pending’判断，是pending就给他放入这俩数组中
     resolveCallbacks = [];
     rejectCallbacks = [];
 
@@ -34,6 +35,7 @@ class MyPromise {
 
                 // 这里会把数组中的每个函数变成某个参数相应的返回值
                 // 这个foreach中的 函数是数组中的函数
+                // 如果当前 resolveCallbacks有东西，遍历执行
                 this.resolveCallbacks.forEach(resolveFn => resolveFn(this.value));
             }
         }
@@ -51,6 +53,7 @@ class MyPromise {
             }
         }
 
+        // 这里不一样的人写的样子会不一样，所以这里写一个抓错误的try，有错误就catch
         try{
             //模拟promise中，接收resolve和reject作为参数的函数，右前后顺序
             fn(resolveHandler, rejectHandler)
@@ -70,6 +73,8 @@ class MyPromise {
             //这里的resolve和reject其实就是上面两个handler。
             const p1 = new MyPromise((resolve, reject) => {
                 this.resolveCallbacks.push(() => {
+                    //push 进去还没执行，要等到上面resolve或者reject后再执行
+                    //那时value已经是新的value了
                     try{
                         const newValue = fn1(this.value);
                         // 让这个变成fulfilled
@@ -134,7 +139,7 @@ MyPromise.reject = function(reason){
 
 MyPromise.all = function(promiseList = []) {
     const p1 = new MyPromise((resolve, reject) => {
-        const result = [];
+        const result = [];// 储存promiseList 所有的结果
         const length = promiseList.length;
         let resolveCount = 0;
 
