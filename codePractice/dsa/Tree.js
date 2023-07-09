@@ -67,5 +67,56 @@ class BST {
     return currentNode;
 
   }
+
+  BFS() {
+    let currentNode = this.root;
+    let queue = [];
+    let results = [];
+    queue.push(currentNode);
+  
+    while(queue.length) {
+      currentNode = queue.shift();
+      results.push(currentNode.value);
+      if(currentNode.left) queue.push(currentNode.left);
+      if(currentNode.right) queue.push(currentNode.right);
+    }
+    return results;
+  }
+
+  //先序遍历，根左右
+  DFSPreOrder() {
+    let results = [];
+    function traverse(currentNode) {
+      results.push(currentNode.value);
+      if(currentNode.left) traverse(currentNode.left);
+      if(currentNode.right) traverse(currentNode.right);
+    }
+    traverse(this.root);
+    return results;
+  }
+
+  //后续遍历， 左右根
+  DFSPostOrder() {
+    let results = [];
+    function traverse(currentNode) {
+      if(currentNode.left) traverse(currentNode.left);
+      if(currentNode.right) traverse(currentNode.right);
+      results.push(currentNode.value);
+    }
+    traverse(this.root);
+    return results;
+  }
+
+  //中序遍历，左根右
+  DFSInOrder() {
+    let results = [];
+    function traverse(currentNode) {
+      if(currentNode.left) traverse(currentNode.left);
+      results.push(currentNode.value);
+      if(currentNode.right) traverse(currentNode.right);
+    }
+    traverse(this.root);
+    return results;
+  }
 }
 
